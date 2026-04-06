@@ -97,6 +97,6 @@ export default class App {
      * @param {number} dT 
      */
     updateState(dT) {
-        this._logicHelper.updateGameState(this._inputState, dT);
+        this._logicHelper.updateAppState(this._inputState, dT);
     }
 }

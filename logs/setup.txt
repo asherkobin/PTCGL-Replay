@@ -1,0 +1,25 @@
+Setup
+digispin chose heads for the opening coin flip.
+digispin won the coin toss.
+digispin decided to go first.
+
+digispin drew 7 cards for the opening hand.
+- 7 drawn cards.
+   • (me2-5_62) Stunfisk, (me1_169) Lillie's Determination, (me2-5_278) Mega Eelektross ex, (me3_72) Energy Search, (me2-5_71) Iono's Wattrel, (sve_12) Basic Lightning Energy, (sve_12) Basic Lightning Energy
+
+dsol420 drew 7 cards for the opening hand.
+- 7 drawn cards.
+dsol420 took a mulligan.
+- Cards revealed from Mulligan 1
+   • (me1_9) Bayleef, (sv8_189) Tera Orb, (me1_117) Forest of Vitality, (mee_1) Basic Grass Energy, (me1_10) Meganium, (me1_119) Lillie's Determination, (me1_2) Ivysaur
+dsol420 took 2 mulligans.
+- Cards revealed from Mulligan 2
+   • (sv8-5_109) Friends in Paldea, (mee_1) Basic Grass Energy, (sv8-5_109) Friends in Paldea, (sv6_143) Bug Catching Set, (mee_1) Basic Grass Energy, (me1_3) Mega Venusaur ex, (mee_1) Basic Grass Energy
+
+digispin drew 2 more cards because dsol420 took at least 1 mulligan.
+- digispin drew 2 cards.
+   • (me2-5_221) Budew, (me2_116) Battle Cage
+
+digispin played (me2-5_62) Stunfisk to the Active Spot.
+digispin played (me2-5_71) Iono's Wattrel to the Bench.
+dsol420 played (me1_1) Bulbasaur to the Active Spot.

@@ -3,6 +3,7 @@ import SoundFactory from "./sound-factory.js";
 import TransitionManager from "./transition-manager.js";
 import { UserInputState } from "./input-event-manager.js";
 import { Config, Layout, Button } from "./config-manager.js"
+import CombatLog from "./combat-log.js";
 
 export default class LogicHelper {
     /**
@@ -75,40 +76,21 @@ export default class LogicHelper {
      * @param {UserInputState} userInput
      * @param {number} dT
      */
-    updateGameState(userInput, dT)
+    updateAppState(userInput, dT)
     {
         if (userInput !== null) {
             this.runCommand(this.inputToCommand(userInput, dT));
         }
 
+        if (userInput.upKeyPress == "short") {
+            this._loadLog();
+        }
+
+        if (userInput.downKeyPress == "short") {
+            this._printLog();
+        }
+
         this._transitionManager.handleTimeChange(dT);
-    }
-
-    /**
-     * @returns {number} rad/ms
-     * @param {string} leftKeyPress
-     * @param {string} rightKeyPress
-     */
-    keyPressToRotationSpeed(leftKeyPress, rightKeyPress) {
-        switch (leftKeyPress) {
-            case "short":
-                return 0.0002;
-            case "medium":
-                return 0.0010;
-            case "long":
-                return 0.0040;
-        }
-
-        switch (rightKeyPress) {
-            case "short":
-                return -0.0002;
-            case "medium":
-                return -0.0010;
-            case "long":
-                return -0.0040;
-        }
-
-        return 0;
     }
 
     /**
@@ -118,6 +100,18 @@ export default class LogicHelper {
         switch (uiCommand) {
             case "???":
                 break;
+        }
+    }
+
+    _loadLog() {
+        if (!this._combatLog) {
+            this._combatLog = new CombatLog("./logs/setup.txt");
+        }
+    }
+
+    _printLog() {
+        if (this._combatLog) {
+            this._combatLog.debugPrint();
         }
     }
 }
